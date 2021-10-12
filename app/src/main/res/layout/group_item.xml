@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/user_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20ssp"
+        android:background="@color/backgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+      <LinearLayout
+          android:id="@+id/linear_user"
+          android:padding="@dimen/_5ssp"
+          android:background="@color/backgroundColor"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <CheckBox
+              android:id="@+id/checkBox"
+              android:visibility="gone"
+              android:buttonTint="@color/white"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_10ssp"
+              android:layout_marginRight="@dimen/_10ssp"
+              />
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/img_user"
+              android:layout_width="@dimen/_40ssp"
+              android:layout_height="@dimen/_40ssp"
+              android:layout_alignParentLeft="true"
+              android:src="@drawable/ic_baseline_person_24"
+              app:civ_circle_background_color="@color/grey"
+              app:civ_border_color="#FFf" />
+
+          <Button
+              android:id="@+id/user_online"
+              android:layout_width="@dimen/_13ssp"
+              android:layout_height="@dimen/_13ssp"
+              android:layout_alignBottom="@id/img_user"
+              android:layout_marginLeft="-8dp"
+              android:layout_marginTop="@dimen/_13ssp"
+              android:layout_toRightOf="@id/img_user"
+              android:background="@drawable/circle_online_users_style"
+              android:orientation="vertical" />
+
+          <TextView
+              android:id="@+id/tvUserName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginLeft="@dimen/_20ssp"
+              android:layout_marginTop="@dimen/_10ssp"
+              android:layout_toEndOf="@+id/user_online"
+              android:layout_toRightOf="@+id/user_online"
+              android:fontFamily="@font/archivo_black"
+              android:textSize="@dimen/_12ssp"
+              android:text="User Name"
+              android:textColor="@color/white" />
+
+
+
+      </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

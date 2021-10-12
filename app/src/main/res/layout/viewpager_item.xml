@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:background="@drawable/slider2"
+        android:layout_height="300dp"
+        android:orientation="horizontal"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-10dp"
+        android:background="#222121"
+        android:layout_below="@id/linear"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:fontFamily="@font/baloo"
+            android:text="Live your life smarter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:text="@string/sub_title"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textColor="#D5D1D1"
+            android:id="@+id/sub_title"
+          />
+
+    </LinearLayout>
+
+</RelativeLayout>

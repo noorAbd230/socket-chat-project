@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/online_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/img_user_member"
+                      android:layout_width="@dimen/_30ssp"
+                      android:layout_height="@dimen/_30ssp"
+                      android:layout_marginRight="@dimen/_10ssp"
+                      android:src="@drawable/signbk"
+                      app:civ_circle_background_color="@color/backgroundColor"
+                      app:civ_border_color="#FFf" />
+
+                  <Button
+                      android:id="@+id/circle_users_online"
+                      android:layout_width="@dimen/_10ssp"
+                      android:layout_height="@dimen/_10ssp"
+                      android:layout_marginLeft="-15dp"
+                      android:layout_marginTop="@dimen/_10ssp"
+                      android:background="@drawable/circle_online_users_member_style"
+                      android:orientation="vertical" />
+              </LinearLayout>
+
+              <TextView
+                  android:id="@+id/tvUserMember"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/_10ssp"
+                  android:gravity="start"
+                  android:textSize="@dimen/_12ssp"
+                  android:text="Noor"
+                  android:textColor="@color/backgroundColor" />
+
+          </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

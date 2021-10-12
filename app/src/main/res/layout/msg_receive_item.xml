@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/online_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:text="name"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                />
+
+
+            <Button
+                android:id="@+id/receive_msg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/_5ssp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_chat_style"
+                android:gravity="start"
+                android:padding="@dimen/_15ssp"
+                android:text="HI User i want to say something about yesterday"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/receive_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:visibility="invisible"
+                android:layout_marginLeft="@dimen/_5ssp"
+                android:text="2:20 am"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_20ssp"
+            android:background="@color/purple_400"
+            android:layout_height="200sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25ssp" />
+
+            <EditText
+                android:id="@+id/search_field"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45ssp"
+                android:background="@drawable/search_outline"
+                android:drawablePadding="@dimen/_10ssp"
+                android:hint="Search Friends"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_11ssp"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_10ssp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:drawableLeft="@drawable/ic_baseline_search_24" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_20ssp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Online Users"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_10ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/recentFriend_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_20ssp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sliderone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_13ssp"
+                    android:fontFamily="@font/patua_one"
+                    android:text="No User Added Yet"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_rvRecentChat"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecentChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

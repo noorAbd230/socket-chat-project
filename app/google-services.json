@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "818000715115",
+    "firebase_url": "https://banded-lexicon-276923.firebaseio.com",
+    "project_id": "banded-lexicon-276923",
+    "storage_bucket": "banded-lexicon-276923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818000715115:android:0b98239ff486f72cde002e",
+        "android_client_info": {
+          "package_name": "com.example.restaurantproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818000715115-3itf563216tcg6hppuf7hft4k6s2fas4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restaurantproject",
+            "certificate_hash": "f9b98b7d8db01347c2e9ec1dc703d009429eb7f4"
+          }
+        },
+        {
+          "client_id": "818000715115-48euc36s1msd2grepg0pbs912poe6utv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE12e-BblzjPzZbLxWcn0GjXBudu0dY1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818000715115-48euc36s1msd2grepg0pbs912poe6utv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818000715115:android:e98f7b62b1d3d516de002e",
+        "android_client_info": {
+          "package_name": "com.example.socketchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818000715115-48euc36s1msd2grepg0pbs912poe6utv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE12e-BblzjPzZbLxWcn0GjXBudu0dY1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818000715115-48euc36s1msd2grepg0pbs912poe6utv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

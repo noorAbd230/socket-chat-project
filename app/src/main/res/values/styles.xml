@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <!-- Customize your theme here. -->
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_400</item>
+    <item name="colorPrimaryVariant">#8A65CB</item>
+    <item name="colorOnPrimary">@color/white</item>
+
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <!-- Customize your theme here. -->
+  </style>
+
+</resources>
